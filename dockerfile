@@ -7,8 +7,7 @@ WORKDIR /app
 # 와일드카드를 사용
 COPY package*.json ./
 
-RUN npm install
-RUN fastify generate .
+RUN npm install -g
 # 프로덕션을 위한 코드를 빌드하는 경우
 # RUN npm ci --only=production
 
